@@ -5,7 +5,7 @@
 }
 
 .wrapper {
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     width: 512px;
@@ -17,11 +17,10 @@ header {
 }
 
 .central-wrapper {
-    flex-grow: 1;
+    width: 100%;
     background-color: rgb(65, 65, 65);
     display: flex;
     overflow: hidden;
-    height: 100vh;
 }
 
 .sidebar {
@@ -37,14 +36,13 @@ main {
 }
 
 footer {
-     height: 70px;
+    display: flex;
+    flex-direction: row;
     background-color: rgb(56, 55, 55);
-    flex-shrink: 0;
-    width: 100vw;
-}
-
-.footer-style {
-    width: 100vw;
+    width: 512px;
+    text-align: center;
+    height: 70px;
+    color: white;
 }
 
 img {
@@ -61,7 +59,7 @@ img:first-of-type{
     position: relative;
 }
 
-.btn1 {
+.btn-1 {
     height: 34px;
     width: 6px;
     position: absolute;
@@ -72,19 +70,35 @@ img:first-of-type{
 .contatti {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 0 0 200px;
+    justify-content: space-around;
 }
 
 .list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    color: rgba(255, 255, 255, 0.56);
+    overflow: auto;
+    scrollbar-width: none;
+    }
+li {
+    margin-top: auto;
 }
 
-.list img {
+    .person {
+        position: relative;
+        left: 60px;
+        bottom: 40px;
+        display: flex;
+    }
+
+.dial {
+position: relative;
+bottom: 40px;
+left: 58px;
+}
+   
+
+.list img { 
     border-radius: 22px;
+
 }
 
 .btn-2 {
@@ -96,7 +110,7 @@ img:first-of-type{
 }
 
 .btn-3:first-child {
-    border-radius: 14px;
+    border-radius: 36px;
     padding: 1px;
     border-color: transparent;
     background-color: gray;
@@ -112,4 +126,23 @@ img:first-of-type{
     padding-left: 30px;
     border-color: transparent;
     background-color: gray;
+    color: white;
+}
+
+.start-btn {
+    color: white;
+    padding-left: 12px;
+}
+
+.footer-style {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-style img {
+    border-radius: 22px;
+    width: 20px;
+    height: auto;
 }
