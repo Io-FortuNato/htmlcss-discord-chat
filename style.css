@@ -21,6 +21,7 @@ header {
     background-color: rgb(65, 65, 65);
     display: flex;
     overflow: hidden;
+    height: 100vh;
 }
 
 .sidebar {
@@ -32,14 +33,18 @@ header {
 main {
     flex-grow: 1;
     overflow-y: auto;
-    border: solid ;
-    border-radius: 8px;
+    height: 100vh;
 }
 
 footer {
      height: 70px;
     background-color: rgb(56, 55, 55);
     flex-shrink: 0;
+    width: 100vw;
+}
+
+.footer-style {
+    width: 100vw;
 }
 
 img {
@@ -53,4 +58,58 @@ img {
 
 img:first-of-type{
     border-radius: 0%;
+    position: relative;
+}
+
+.btn1 {
+    height: 34px;
+    width: 6px;
+    position: absolute;
+    left: -1px;
+    top: 16px;
+}
+
+.contatti {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 0 200px;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.list img {
+    border-radius: 22px;
+}
+
+.btn-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   padding: 10px;
+   padding: 12px;
+}
+
+.btn-3:first-child {
+    border-radius: 14px;
+    padding: 1px;
+    border-color: transparent;
+    background-color: gray;
+    color: white;
+}
+
+.btn-3:last-child {
+    border-radius: 12px;
+    padding-right: 180px;
+    text-align: center;
+    line-height: normal;
+    margin-left: 70px;
+    padding-left: 30px;
+    border-color: transparent;
+    background-color: gray;
 }
